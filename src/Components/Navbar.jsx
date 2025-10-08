@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const Navbar = () => {
   return (
@@ -12,10 +13,18 @@ const Navbar = () => {
 
       {/* Navigation Links */}
       <ul className="flex gap-8 bg-white shadow-md py-3 px-8 rounded-4xl ">
-        <li>Home</li>
-        <li>About</li>
-        <li>Products</li>
-        <li>Contact</li>
+        <Link to="/">
+          <li>Home</li>
+        </Link>
+        <Link to="/about">
+          <li>About</li>
+        </Link>
+        <Link to="/product">
+          <li>Products</li>
+        </Link>
+        <Link to="/contact">
+          <li>Contact</li>
+        </Link>
       </ul>
 
       {/* Get Started Button */}
